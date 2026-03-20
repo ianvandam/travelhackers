@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  color: #111;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+  font-size: 0.9rem;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(#fff, #f5f5f5);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.primary {
+  background: black;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid black;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: white;
+}
+
+.trip-card {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.image {
+  height: 150px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.review {
+  background: #f5f5f5;
+  padding: 18px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.highlight {
+  border: 2px solid black;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact {
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* 📱 → 💻 */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
